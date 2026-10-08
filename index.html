@@ -133,7 +133,14 @@ footer .mf{margin-top:20px}
 .fi{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;margin-top:38px;padding-top:28px;border-top:1px solid #ffffff22}
 footer h3{color:#e6c76f;font-size:18px;margin-bottom:8px}
 footer p{margin:0;line-height:1.75}
-.cp{margin-top:28px;font-size:14px;color:#9eabcd}
+.cp{margin-top:22px;font-size:14px;color:#9eabcd}
+.dv{margin-top:8px;display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap;font-size:12.5px;letter-spacing:.2px;color:#8393b8;text-align:center}
+.dv a{position:relative;color:#e6c76f;font-weight:600;text-decoration:none;padding-bottom:1px;transition:color .3s}
+.dv a:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.dv a:hover,.dv a:focus-visible{color:#f4dc8f}
+.dv a:hover:after,.dv a:focus-visible:after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){.dv a,.dv a:after{transition:none}}
+
 @media(max-width:820px){.hero .w,.two,.cols,.fi{grid-template-columns:1fr}.hero .w{padding-block:50px}.ev{grid-template-columns:64px 1fr}.tag{display:none}.brand small{display:none}.nb{display:none}.q{margin-top:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.wd i{transform:none}.ml a{opacity:1;transform:none}.js .rv{opacity:1!important;transform:none!important}}
 .js .rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
@@ -317,6 +324,7 @@ body.open .ml a{animation:mi .7s cubic-bezier(.2,.8,.2,1) forwards;animation-del
 <div class="fi"><div><span class="crest ft" role="img" aria-label="লোগো"></span><h3>সরকারি গৈলা মডেল মাধ্যমিক বিদ্যালয়</h3><p>প্রাক্তন ছাত্রছাত্রী সংসদ<br>গৈলা, আগৈলঝাড়া, বরিশাল</p></div><div><h3>বিদ্যালয় স্থাপিত</h3><p>১৮৯৩ সাল</p></div></div>
 <button id="tp" type="button" aria-label="উপরে যান"><svg viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></svg></button>
 <div class="cp">© সরকারি গৈলা মডেল মাধ্যমিক বিদ্যালয় প্রাক্তন ছাত্রছাত্রী সংসদ। সর্বস্বত্ব সংরক্ষিত।</div>
+<div class="dv"><span>Site develop by</span><a href="https://shawansardersolyman.github.io" target="_blank" rel="noopener noreferrer" aria-label="Shawan Sarder Solyman — পোর্টফোলিও খুলুন">Shawan Sarder Solyman</a></div>
 </div></footer>
 
 <script>
